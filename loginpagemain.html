@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adivex</title>
+
+</head>
+
+<body>
+
+    <div class="login-box" id="loginPage">
+
+        <h1>Adivex</h1>
+
+        <p>Learn together. Grow together.</p>
+
+        <h2>Login</h2>
+
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password">
+
+        <button onclick="login()">Login</button>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="#" onclick="showSignup()">Sign up</a>
+        </p>
+
+    </div>
+
+    <div class="login-box" id="signupPage" style="display: none;">
+
+        <h1>Adivex</h1>
+
+        <p>Learn together. Grow together.</p>
+
+        <h2>Sign Up</h2>
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" id="signupEmail" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" id="signupPassword" placeholder="Create a password">
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password">
+
+        <button onclick="signup()">Sign Up</button>
+
+        <p class="signup">
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+
+    </div>
+<script src="{{ url_for('static', filename='signup.js') }}"></script>
+<script src="signup.js"></script>
+<link rel="stylesheet" href="login.css">
+</body>
+
+</html>
